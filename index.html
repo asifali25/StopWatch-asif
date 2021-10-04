@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/20fcd57c5b.js" crossorigin="anonymous"></script>
+    <title>Stop Watch</title>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay hidden">
+            <div class="messagebox">
+                <p id="closebtn" class="textone">&#9747;</p>
+                <p>Please Type Your Name First</p>
+            </div>
+            
+        </div>
+       
+        <div class="container__box-1">
+            <p class="name">Name</p>
+            <form action="" class="form">
+                <input type="text" class="input-text" placeholder="Full Name">
+                <input type="button" value="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container__box-2">
+            <p class="welcome">
+                <span>Welcome, </span><span class="wel"></span>
+            </p>
+            <p class="stop-watch">Stop Watch</p>
+            <p class="timer"><span id="minute">00</span>, <span id="second">00</span>, <span id="tens">00</span></p>
+        
+            <div class="container__button-box">
+                <div id="start" class="start-btn"><i class="fas fa-play"></i></div>
+                <div id="pause" class="pause-btn"><i class="fas fa-pause"></i></div>
+                <div id="restart" class="restart-btn"><i class="fas fa-redo"></i></div>
+            </div>
+
+            <ul id="laps" class="laps-container">
+                <!-- <li>00:00,00</li>
+                <li>00:00,00</li>
+                <li>00:00,00</li>
+                <li>00:00,00</li>
+                <li>00:00,00</li> -->
+            </ul>
+        </div>
+
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
